@@ -1,0 +1,12 @@
+print "Hello World!"
+
+#python 3
+#print ("Hello World!")
+
+#You can use single or double quotes for a string
+print 'Hello World!'
+
+#Combining multiple strings:
+print "Hello " + "World"
+
+#Errors - common errors with strings are: EOL and Name Errors.
