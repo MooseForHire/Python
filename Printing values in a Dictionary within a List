@@ -1,0 +1,38 @@
+lloyd = {
+  "name": "Lloyd",
+  "homework": [],
+  "quizzes": [],
+  "tests": []
+}
+alice = {
+  "name": "Alice",
+  "homework": [100.0, 92.0, 98.0, 100.0],
+  "quizzes": [82.0, 83.0, 91.0],
+  "tests": [89.0, 97.0]
+}
+tyler = {
+  "name": "Tyler",
+  "homework": [0.0, 87.0, 75.0, 22.0],
+  "quizzes": [0.0, 75.0, 78.0],
+  "tests": [100.0, 100.0]
+}
+
+lloyd['homework'] = 90.0,97.0,75.0,92.0
+lloyd['quizzes'] = 88.0,40.0,94.0
+lloyd['tests'] = 75.0,90.0
+
+
+students = []
+students.append(lloyd)
+students.append(alice)
+students.append(tyler)
+
+#***********************************************************************************
+#PRINTING SPECIFIC KEY VALUES CONTAINED IN A LIST CONTAINING DICTIONARIES
+#THIS IS HOW YOU WOULD ACCESS A KEY-PAIR THAT IS CONTAINED IN A LIST OF DICTIONARIES
+#*************************************************************************************
+for x in students:
+  print x["name"]
+  print x["homework"]
+  print x["quizzes"]
+  print x["tests"]
