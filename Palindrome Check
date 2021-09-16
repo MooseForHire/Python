@@ -1,0 +1,42 @@
+class Solution(object):
+    def isPalindrome(self, x):
+        
+        #To tell if its a palindrome, need to cut it in half?
+        #In order to cut in half, need each individual digit
+        #Stored on its own
+        
+        #cut out edge cases
+        if x < 0:
+            return False
+        
+        temp = x
+        reversedNum = []
+        
+        #temp = number passed in
+        while temp > 0:
+            
+            #digit = remainder when divided by 10
+            digit = temp % 10
+            
+            #add the remainder to a list
+            reversedNum.append(digit)
+            
+            # // = divide the left by the right,only keep the whole number component.
+            # keep the whole number result that was passed in
+            temp = temp // 10
+        
+        
+        """"
+        The double colons (::) in python are used for jumping of elements in multiple axes.
+        The extended slicing notation string[start:stop:step] 
+        uses three arguments start, stop, and step to carve out a subsequence.
+        
+        Using a negative number as an index in python returns the nth element from 
+        the right-hand side of the list (as opposed to the usual left-hand side).
+        """
+        
+        #organize = will equal the 1st element from the right
+        organizeElements = reversedNum[::-1]
+        
+        return reversedNum == organizeElements
+    
