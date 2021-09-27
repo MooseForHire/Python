@@ -1,0 +1,15 @@
+#A prime number is a positive integer greater than 1 that has no positive divisors other an 1 and itself.
+
+def is_prime(x):
+
+  if x < 2:
+    return False
+
+  else:
+
+    #For each number n from 2 to x - 1
+    for n in range(2, x - 1):
+      if x % n == 0:
+        return False  
+
+  return True
