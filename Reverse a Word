@@ -1,0 +1,19 @@
+def reverse(text):
+
+  #Empty string called word
+    word = ""
+
+    #This gives you the length of the word (Python! would store 6 into wordL)
+    wordL = len(text) - 1
+
+    #while wordL >= 0
+    while wordL >= 0:
+
+        #Store word + character at the index of the last letter
+        word = word + text[wordL]
+
+        #subtract 1 from wordL, now it will take the next letter
+        wordL -= 1
+    return word
+  
+print reverse("Hello World")
