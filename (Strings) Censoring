@@ -1,0 +1,38 @@
+def censor(text,word):
+
+  #word = word you want censored
+  #text = string to search for word
+  #replace letters of word in text with ***
+
+  #Split a string into a list where each word is a list item:
+  tmp = text.split()
+  
+  print "Original Text: " + " ".join(tmp)
+  
+  #range(start,stop,step)
+  #len = length of list start at 0
+
+  for z in range(len(tmp)):
+
+    #for index,value allows you to index the enumerate function
+    for index,i in enumerate(tmp):
+
+    #if the word in the list matches word passed,
+      if i == word:
+        #getting the length of that word
+        L = len(i)
+    
+        #remove the word
+        tmp.remove(i)
+        print "After removal: " + str(tmp) 
+        
+        tmp.insert(index,"*" * L)
+        print "After appending: " + str(tmp)
+        print "\n"
+
+  #join the string with a space delimiter
+  tmp = " ".join(tmp)
+  
+  print "Final output: " + tmp
+  print "\n"
+  return tmp
