@@ -1,0 +1,28 @@
+def anti_vowel(text):
+
+  #Takes a string, removes the vowels,
+  #and returns the word
+
+  word = ""
+  temp = []
+  
+  for i in text:
+    temp.append(i)
+    for x in temp:
+      if x == 'a' or x == 'A':
+        temp.remove(x)
+      if x == 'e' or x == 'E':
+        temp.remove(x)
+      if x == 'i' or x == 'I':
+        temp.remove(x)
+      if x == 'o' or x == 'O':
+        temp.remove(x)
+      if x == 'u' or x == 'U':
+        temp.remove(x)
+  
+  for y in temp:
+    word += y
+
+  print word
+  return word
+  
