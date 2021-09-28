@@ -1,0 +1,15 @@
+def count(sequence, item):
+
+  #Return the # of times an item occurs
+  #in a list(sequence)
+  result = 0
+  count = 0
+
+  print sequence
+  print item
+
+  for index, v in enumerate(sequence):
+    if v == item:
+      count += 1
+  return count
+
