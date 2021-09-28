@@ -1,0 +1,19 @@
+def remove_duplicates(my_list):
+
+#When we use not in, it results in True only if #the object on the left is not present in the  #object on the right.
+
+  #remove elements of the list that are the same
+  new_List = []
+
+  #new_List holds all the values
+  for x in my_list:
+
+    #if 4 is not in new_list (it is)
+    if x not in new_List:
+      
+      new_List.append(x)
+      print new_List
+
+  return new_List
+ 
+
